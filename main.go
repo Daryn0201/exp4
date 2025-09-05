@@ -19,7 +19,7 @@ func basicAuthMiddleware() gin.HandlerFunc {
 		username, password, ok := c.Request.BasicAuth()
 
 		if !ok || username != USERNAME || password != PASSWORD {
-			c.Header("WWW-Authenticate", Basic realm="Restricted")
+			c.Header("WWW-Authenticate", `Basic realm="Restricted"`)
 			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{
 				"error": "Unauthorized",
 			})
