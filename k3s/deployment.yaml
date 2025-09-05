@@ -16,7 +16,7 @@ spec:
       - name: exp4
         image: daryn0201/exp4:latest
         ports:
-        - containerPort: 8056
+        - containerPort: 8080
         env:
         - name: DATABASE_URL
           value: "postgres://postgres:Zxcvbnm123@host:5432/exp4"
@@ -33,5 +33,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8056
+      targetPort: 8080
       nodePort: 31011  # Можно указать порт от 30000 до 32767
