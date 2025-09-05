@@ -34,4 +34,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8057
-      nodePort: 31010  # Можно указать порт от 30000 до 32767
+      nodePort: 31011  # Можно указать порт от 30000 до 32767
