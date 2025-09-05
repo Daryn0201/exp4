@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: example3-service
+  name: exp4-service
 spec:
   type: NodePort
   selector:
-    app: example3
+    app: exp4
   ports:
     - protocol: TCP
       port: 80
